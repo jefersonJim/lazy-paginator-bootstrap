@@ -17,7 +17,7 @@ Exemplo simples:
     });
 
 # Propriedades
-   <strong>Ajax</strong> : String  </br> Url para request para consumir os dados </br>
+   <strong>Ajax</strong> : String  <br> Url para request para consumir os dados <br>
           Exemplo de retorno do request :
               
            {
