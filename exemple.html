@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+	<script type="text/javascript" src="dist/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/jim-plugin.paginator.js"></script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-12">
+			<table id="table_1" class="table table-bordered" > 
+				<thead>
+					<tr>
+						<td  width='20%'>#ID</td>
+						<td  width='20%'>EXEMPLO</td>
+						<td> DATA</td>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<script>
+	
+
+	$("#table_1").lazyPaginator({
+		ajax:"http://localhost/jim-plugin-paginator/demo-backend/exemplo_paginator.php",
+		rows: 10,
+		rangeButton:4,
+		renderLine:function(result, linha){
+			line  = `<td style="text-align:center;"> `+result.id+` </td>`;
+			line += `<td style="text-align:center;"> `+result.exemplo+` </td>`;
+			line += `<td> `+result.data+` </td>`;
+			return line;
+		}
+	});
+
+
+
+
+</script>
+
+
