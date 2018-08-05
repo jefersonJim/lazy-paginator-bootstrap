@@ -1,5 +1,7 @@
 # Jim plugin lazy-paginator-bootstrap
 
+https://jefersonjim.github.io/lazy-paginator-bootstrap/
+
 Paginação Lazy Loading utilizando recursos do jquery e bootstrap que
 permite programar o "table" para trabalhar de forma “preguiçosa”, ou seja, buscando apenas os registros que precisam ser exibidos na 
 página atual.
